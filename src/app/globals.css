@@ -1,26 +1,35 @@
+/* ================================ */
+/*           globals.css           */
+/* ================================ */
+
+/* 引入 TailwindCSS，让你可以使用它提供的实用类名 */
 @import "tailwindcss";
 
+/* 定义全局变量，存储背景色和前景色 */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #ffffff; /* 默认背景颜色：白色 */
+  --foreground: #171717; /* 默认前景颜色：深灰色 */
 }
 
+/* 使用 TailwindCSS 的 @theme 特性，将变量转换为 Tailwind 的颜色配置 */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: var(--background); /* 将背景色变量应用到 Tailwind */
+  --color-foreground: var(--foreground); /* 将前景色变量应用到 Tailwind */
+  --font-sans: var(--font-geist-sans); /* 定义无衬线字体变量 */
+  --font-mono: var(--font-geist-mono); /* 定义等宽字体变量 */
 }
 
+/* 使用媒体查询检测用户系统的暗黑模式，自动切换背景和前景色 */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0a0a0a; /* 暗黑模式背景色：黑色 */
+    --foreground: #ededed; /* 暗黑模式前景色：浅灰色 */
   }
 }
 
+/* 设置 body 的基础样式，包括背景色、前景色和字体 */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif; /* 使用 Arial 或 Helvetica 作为字体 */
 }
