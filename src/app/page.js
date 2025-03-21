@@ -23,6 +23,7 @@ export default function Home() {
     </header>
     {/* 给区块分区 */}
     <div className="flex flex-row">
+      {/* 这里是放弹幕的div */}
       <div className="w-300 h-200 bg-gray-200 mb-4" style={{ backgroundColor: "rgba(169, 169, 169, 0.5)" }}></div>
       {/* 第二、第三个 div，占据38%的宽度和20%的高度 */}
       <div className="flex flex-col">
