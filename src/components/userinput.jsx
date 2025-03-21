@@ -22,7 +22,7 @@ const formSchema = z.object({
     }),
 });
 
-export function ProfileForm() {
+export function UserInput() {
     const [isSubmitting, setIsSubmitting] = useState(false);
     
     const form = useForm({

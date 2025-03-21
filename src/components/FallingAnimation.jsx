@@ -16,7 +16,7 @@ const FallingAnimation = () => {
     const container = containerRef.current;
     container.style.position = 'relative';
     container.style.width = '100%';
-    container.style.height = '600px';
+    container.style.height = '300px';
     container.style.overflow = 'hidden';
     container.style.backgroundColor = '#f0f0f0';
     
@@ -25,7 +25,7 @@ const FallingAnimation = () => {
     ground.style.position = 'absolute';
     ground.style.bottom = '0';
     ground.style.width = '100%';
-    ground.style.height = '20px';
+    ground.style.height = '1px';
     ground.style.backgroundColor = '#333';
     container.appendChild(ground);
     
