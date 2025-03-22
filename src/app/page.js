@@ -10,6 +10,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import FallingAnimation from '../components/FallingAnimation';
 import { UserInput } from "@/components/userinput";
+import { MessageDisplay } from "@/components/message.";
 /* 定义主页组件 */
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
     {/* 给区块分区 */}
     <div className="flex flex-row">
       {/* 这里是放弹幕的div */}
-      <div className="w-300 h-200 bg-gray-200 mb-4" style={{ backgroundColor: "rgba(169, 169, 169, 0.5)" }}></div>
+      <div className="w-300 h-200 bg-gray-200 mb-4" style={{ backgroundColor: "rgba(169, 169, 169, 0.5)" }}><MessageDisplay/></div>
       {/* 第二、第三个 div，占据38%的宽度和20%的高度 */}
       <div className="flex flex-col">
         <div className="w-120 h-100 bg-gray-300" style={{ backgroundColor: "rgba(169, 169, 169, 0.6)" }}> <UserInput/></div>
